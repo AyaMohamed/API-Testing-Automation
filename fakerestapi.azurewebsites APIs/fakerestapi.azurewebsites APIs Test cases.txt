@@ -1,0 +1,71 @@
+API: GET "http://fakerestapi.azurewebsites.net/api/v1/Authors"
+	Test case 1: Validate status code returned when sending valid URL
+		Expected result: status code should be 200 OK
+		Actual result: status code returned is 200
+		status: pass
+		
+	
+API: POST "http://fakerestapi.azurewebsites.net/api/v1/Authors"
+	Test case 2: Validate status code returned when sending valid request parameters
+		Expected result: status code returned should be 200 OK
+		Actual result: status code returned is 200 OK
+		status: pass
+		
+	
+	Test case 3: Check status code returned when sending invalid value for Id parameter
+		Expected result: status code returned should be 400 (Bad request)
+		Actual result: status code returned is 400 (Bad request)
+		status: pass
+		
+	Test case 4: Check status code returned when sending empty value for Id parameter
+		Expected result: status code returned should be 400 (Bad request)
+		Actual result: status code returned is 400 (Bad request)
+		status: pass
+		
+	Test case 5: Check status code returned when not sending Id parameter at all
+		Expected result: status code returned should be 400 (Bad request)
+		Actual result: status code returned is 400 (Bad request)	
+		status: pass
+		
+	
+
+API: GET "http://fakerestapi.azurewebsites.net/api/v1/Authors/authors/books/{idBook}"
+	Test case 6: Validate status code returned when sending valid book id
+		Expected result: status code should be 200 OK
+		Actual result: status code returned is 200
+		status: pass
+		
+	Test case 7: Check response body returned when sending a book id that does not exist
+		Expected result: response should be an empty array
+		Actual result: response body is an empty array
+		status: pass
+		
+
+API: GET "http://fakerestapi.azurewebsites.net/api/v1/Authors/{id}"
+	Test case 8: Validate status code returned when sending valid author id
+		Expected result: status code should be 200 OK
+		Actual result: status code returned is 200
+		status: pass
+		
+	Test case 9: Check status returned when sending an author id that does not exist
+		Expected result: status code returned should be 404 (Not found)
+		Actual result: status code returned is 404 (Not found)
+		status: pass
+		
+	Test case 10: Validate that response received is relavent to author Id sent
+		Expected result: response retrieved should include the data of the author id sent in the request URL
+		Actual result: response retrieved includes the data of the author id sent in the request URL
+		status: pass
+		
+	
+API: PUT "http://fakerestapi.azurewebsites.net/api/v1/Authors/{id}"
+	Test case 11: Validate status code returned after updating information succesfully
+		Expected result: status code should be 200 OK
+		Actual result: status code returned is 200
+		status: pass
+		
+API: GET "http://fakerestapi.azurewebsites.net/api/v1/Authors/{id}"
+	Test case 12: Check Author's information after updating it
+		Expected result: the updated author's information should be retrieved in the response
+		Actual result: author's information is not updated
+		status: failed	
