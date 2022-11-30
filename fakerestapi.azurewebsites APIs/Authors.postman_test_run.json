@@ -1,0 +1,259 @@
+{
+	"id": "c44c83aa-8784-43ca-b0eb-09ffdf6a8501",
+	"name": "Authors",
+	"timestamp": "2022-11-30T20:53:59.264Z",
+	"collection_id": "8035977-a1a9a263-d8d9-40e1-98aa-e7665616b132",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 10,
+	"totalFail": 1,
+	"results": [
+		{
+			"id": "625d6f1f-bbd5-4be3-9b8a-30fabce6c294",
+			"name": "Get all authors",
+			"url": "http://fakerestapi.azurewebsites.net/api/v1/Authors",
+			"time": 369,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Validate status code returned when sending valid URL": true,
+				"Validate status name returned when sending valid URL": true
+			},
+			"testPassFailCounts": {
+				"Validate status code returned when sending valid URL": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate status name returned when sending valid URL": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				369
+			],
+			"allTests": [
+				{
+					"Validate status code returned when sending valid URL": true,
+					"Validate status name returned when sending valid URL": true
+				}
+			]
+		},
+		{
+			"id": "f10020c0-a436-4f34-a345-50d3d3e9b652",
+			"name": "Add New Author",
+			"url": "http://fakerestapi.azurewebsites.net/api/v1/Authors",
+			"time": 79,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Validate status code returned when sending valid request parameters": true,
+				"Validate status name returned when sending valid request parameters": true
+			},
+			"testPassFailCounts": {
+				"Validate status code returned when sending valid request parameters": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate status name returned when sending valid request parameters": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				79
+			],
+			"allTests": [
+				{
+					"Validate status code returned when sending valid request parameters": true,
+					"Validate status name returned when sending valid request parameters": true
+				}
+			]
+		},
+		{
+			"id": "7721b070-831e-46bf-b11d-6de27d980958",
+			"name": "Get Book Id Information",
+			"url": "http://fakerestapi.azurewebsites.net/api//v1/Authors/authors/books/20",
+			"time": 72,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Validate that all book id returned equal to book id parameter": true
+			},
+			"testPassFailCounts": {
+				"Validate that all book id returned equal to book id parameter": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				72
+			],
+			"allTests": [
+				{
+					"Validate that all book id returned equal to book id parameter": true
+				}
+			]
+		},
+		{
+			"id": "63e8786b-52df-4aff-ad11-5d0034f566a9",
+			"name": "Get Author by Id",
+			"url": "http://fakerestapi.azurewebsites.net/api/v1/Authors/120",
+			"time": 74,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Validate status code returned when sending valid author id": true,
+				"Validate that author id returned equal to author id parameter": true
+			},
+			"testPassFailCounts": {
+				"Validate status code returned when sending valid author id": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate that author id returned equal to author id parameter": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				74
+			],
+			"allTests": [
+				{
+					"Validate status code returned when sending valid author id": true,
+					"Validate that author id returned equal to author id parameter": true
+				}
+			]
+		},
+		{
+			"id": "ad10259e-5c66-434c-8427-e9ee4e451641",
+			"name": "Update Author by author id",
+			"url": "http://fakerestapi.azurewebsites.net/api/v1/Authors/120",
+			"time": 74,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Validate status code returned when sending valid request with author id": true,
+				"Validate that response data received are relevant to author id": true
+			},
+			"testPassFailCounts": {
+				"Validate status code returned when sending valid request with author id": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate that response data received are relevant to author id": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				74
+			],
+			"allTests": [
+				{
+					"Validate status code returned when sending valid request with author id": true,
+					"Validate that response data received are relevant to author id": true
+				}
+			]
+		},
+		{
+			"id": "c78f9009-a342-4f2b-950d-fccd30c455c4",
+			"name": "Recheck Author's data after update",
+			"url": "http://fakerestapi.azurewebsites.net/api/v1/Authors/120",
+			"time": 83,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Check Author's information after updating it": false
+			},
+			"testPassFailCounts": {
+				"Check Author's information after updating it": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				83
+			],
+			"allTests": [
+				{
+					"Check Author's information after updating it": false
+				}
+			]
+		},
+		{
+			"id": "88c9a8b1-fe5f-4b7b-a9d8-96492ce2f26f",
+			"name": "Delete author by Id",
+			"url": "http://fakerestapi.azurewebsites.net/api/v1/Authors/100",
+			"time": 81,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Validate status code returned when sending request with author id": true
+			},
+			"testPassFailCounts": {
+				"Validate status code returned when sending request with author id": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				81
+			],
+			"allTests": [
+				{
+					"Validate status code returned when sending request with author id": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 832,
+	"collection": {
+		"requests": [
+			{
+				"id": "625d6f1f-bbd5-4be3-9b8a-30fabce6c294",
+				"method": "GET"
+			},
+			{
+				"id": "f10020c0-a436-4f34-a345-50d3d3e9b652",
+				"method": "POST"
+			},
+			{
+				"id": "7721b070-831e-46bf-b11d-6de27d980958",
+				"method": "GET"
+			},
+			{
+				"id": "63e8786b-52df-4aff-ad11-5d0034f566a9",
+				"method": "GET"
+			},
+			{
+				"id": "ad10259e-5c66-434c-8427-e9ee4e451641",
+				"method": "PUT"
+			},
+			{
+				"id": "c78f9009-a342-4f2b-950d-fccd30c455c4",
+				"method": "GET"
+			},
+			{
+				"id": "88c9a8b1-fe5f-4b7b-a9d8-96492ce2f26f",
+				"method": "DELETE"
+			}
+		]
+	}
+}
