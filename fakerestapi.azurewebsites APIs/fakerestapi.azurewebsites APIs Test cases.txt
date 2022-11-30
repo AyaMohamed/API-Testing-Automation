@@ -43,7 +43,7 @@ API: GET "http://fakerestapi.azurewebsites.net/api/v1/Authors/authors/books/{idB
 
 API: GET "http://fakerestapi.azurewebsites.net/api/v1/Authors/{id}"
 	Test case 8: Validate status code returned when sending valid author id
-		Expected result: status code should be 200 OK
+		Expected result: status code should be 200
 		Actual result: status code returned is 200
 		status: pass
 		
