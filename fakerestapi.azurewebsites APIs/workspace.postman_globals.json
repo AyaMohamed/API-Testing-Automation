@@ -1,0 +1,39 @@
+{
+	"id": "e96ae421-febe-4368-8a60-528051510958",
+	"values": [
+		{
+			"key": "BaseURL",
+			"value": "http://fakerestapi.azurewebsites.net/api/",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "bookId",
+			"value": "20",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "authorId",
+			"value": "120",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "firstName",
+			"value": "ahmed",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "lastName",
+			"value": "ali",
+			"type": "default",
+			"enabled": true
+		}
+	],
+	"name": "Globals",
+	"_postman_variable_scope": "globals",
+	"_postman_exported_at": "2022-11-30T20:52:29.789Z",
+	"_postman_exported_using": "Postman/10.5.6-221129-1459"
+}
